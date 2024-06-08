@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import Sentences from '../sentences.json';
 import { GameContext } from './GameContext.js';
 import { useNavigate } from 'react-router-dom';
@@ -10,10 +10,16 @@ export default function GamePage() {
   const sentences = levels[selectedLevel].sentences;
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
   const sentence = sentences[currentSentenceIndex];
+  const [updatedSentence, setUpdatedSentence] = useState('');
   const navigate = useNavigate();
 
+  useEffect(() => {
+    // Update the sentence with underscores for correctOption
+    setUpdatedSentence(sentence.sentence.replace(sentence.correctOption, '_____'));
+  }, [sentence]);
+
   const handleOptionClick = async (option) => {
-    console.log(option)
+    console.log(option);
     const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(option);
     await synth.speak(utterance);
@@ -23,7 +29,10 @@ export default function GamePage() {
         navigate('/end');
       }
       else{
-        setCurrentSentenceIndex((prev) => prev + 1);
+        setUpdatedSentence(updatedSentence.replace('_____', sentence.correctOption));
+        setTimeout(() => {
+          setCurrentSentenceIndex((prev) => prev + 1);
+        }, 1500);
       }
     }
   }
@@ -38,11 +47,11 @@ export default function GamePage() {
       </div>
       <div className='container mt-5 game'>
         <div className='sentence mt-4'>
-          <h3>{sentence.sentence}</h3>
+          <h3>{updatedSentence}</h3>
         </div>
         <div className='options mt-3'>
           {sentence.options.map((option, index) => (
-            <button key={index} className='btn btn-primary' onClick={() => handleOptionClick(option)}>
+            <button key={index} className='btn btn-lg optionButton' onClick={() => handleOptionClick(option)}>
               {option}
             </button>
           ))}

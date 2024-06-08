@@ -4,7 +4,7 @@
       {
         "sentenceId": 1,
         "audioClip": "audio/dog.mp3",
-        "sentence": "The ____ is barking loudly.",
+        "sentence": "The dog is barking loudly.",
         "options": ["cat", "dog", "bird"],
         "correctOption": "dog",
         "feedback": {
@@ -15,7 +15,7 @@
       {
         "sentenceId": 2,
         "audioClip": "audio/apple.mp3",
-        "sentence": "She ate a red ____.",
+        "sentence": "She ate a red apple.",
         "options": ["banana", "carrot", "apple"],
         "correctOption": "apple",
         "feedback": {
@@ -26,7 +26,7 @@
       {
         "sentenceId": 3,
         "audioClip": "audio/car.mp3",
-        "sentence": "He drives a fast ____.",
+        "sentence": "He drives a fast car.",
         "options": ["bottle", "phone", "car"],
         "correctOption": "car",
         "feedback": {
@@ -41,7 +41,7 @@
       {
         "sentenceId": 4,
         "audioClip": "audio/house.mp3",
-        "sentence": "They live in a big ____.",
+        "sentence": "They live in a big house.",
         "options": ["tree", "house", "bike"],
         "correctOption": "house",
         "feedback": {
@@ -52,7 +52,7 @@
       {
         "sentenceId": 5,
         "audioClip": "audio/book.mp3",
-        "sentence": "She is reading a ____.",
+        "sentence": "She is reading a book.",
         "options": ["book", "pen", "hat"],
         "correctOption": "book",
         "feedback": {
@@ -63,7 +63,7 @@
       {
         "sentenceId": 6,
         "audioClip": "audio/flower.mp3",
-        "sentence": "He plucked a ____.",
+        "sentence": "He plucked a flower.",
         "options": ["flower", "ant", "rock"],
         "correctOption": "flower",
         "feedback": {
@@ -78,7 +78,7 @@
       {
         "sentenceId": 7,
         "audioClip": "audio/chair.mp3",
-        "sentence": "She sat on the ____.",
+        "sentence": "She sat on the chair.",
         "options": ["sky", "wire", "chair"],
         "correctOption": "chair",
         "feedback": {
@@ -89,7 +89,7 @@
       {
         "sentenceId": 8,
         "audioClip": "audio/ball.mp3",
-        "sentence": "They played cricket with a ____.",
+        "sentence": "They played cricket with a ball.",
         "options": ["pen", "ball", "rice"],
         "correctOption": "ball",
         "feedback": {
@@ -100,7 +100,7 @@
       {
         "sentenceId": 9,
         "audioClip": "audio/bike.mp3",
-        "sentence": "He rides his ____ every day.",
+        "sentence": "He rides his bike every day.",
         "options": ["bike", "watermelon", "sun"],
         "correctOption": "bike",
         "feedback": {
@@ -111,7 +111,7 @@
       {
         "sentenceId": 10,
         "audioClip": "audio/milk.mp3",
-        "sentence": "She drank a glass of ____.",
+        "sentence": "She drank a glass of milk.",
         "options": ["remote", "chair", "milk"],
         "correctOption": "milk",
         "feedback": {
@@ -126,7 +126,7 @@
       {
         "sentenceId": 11,
         "audioClip": "audio/sun.mp3",
-        "sentence": "The ____ is shining brightly.",
+        "sentence": "The sun is shining brightly.",
         "options": ["moon", "cheetah", "sun"],
         "correctOption": "sun",
         "feedback": {
@@ -137,7 +137,7 @@
       {
         "sentenceId": 12,
         "audioClip": "audio/shoe.mp3",
-        "sentence": "He put on his ____.",
+        "sentence": "He put on his shoe.",
         "options": ["road", "shoe", "theatre"],
         "correctOption": "shoe",
         "feedback": {
@@ -148,7 +148,7 @@
       {
         "sentenceId": 13,
         "audioClip": "audio/fish.mp3",
-        "sentence": "The ____ is swimming in the pond.",
+        "sentence": "The fish is swimming in the pond.",
         "options": ["mountain", "seat", "fish"],
         "correctOption": "fish",
         "feedback": {
@@ -159,7 +159,7 @@
       {
         "sentenceId": 14,
         "audioClip": "audio/tree.mp3",
-        "sentence": "There is a big ____ in the garden.",
+        "sentence": "There is a big tree in the garden.",
         "options": ["laptop", "grass", "tree"],
         "correctOption": "tree",
         "feedback": {
@@ -170,7 +170,7 @@
       {
         "sentenceId": 15,
         "audioClip": "audio/clock.mp3",
-        "sentence": "The ____ is ticking.",
+        "sentence": "The clock is ticking.",
         "options": ["clock", "mall", "shop"],
         "correctOption": "clock",
         "feedback": {
@@ -185,7 +185,7 @@
       {
         "sentenceId": 16,
         "audioClip": "audio/pizza.mp3",
-        "sentence": "They ordered a ____ for dinner.",
+        "sentence": "They ordered a pizza for dinner.",
         "options": ["bicycle", "monitor", "pizza"],
         "correctOption": "pizza",
         "feedback": {
@@ -196,7 +196,7 @@
       {
         "sentenceId": 17,
         "audioClip": "audio/phone.mp3",
-        "sentence": "She called him on the ____.",
+        "sentence": "She called him on the phone.",
         "options": ["plastic", "phone", "table"],
         "correctOption": "phone",
         "feedback": {
@@ -207,7 +207,7 @@
       {
         "sentenceId": 18,
         "audioClip": "audio/rain.mp3",
-        "sentence": "The ____ is falling.",
+        "sentence": "The rain is falling.",
         "options": ["sky", "rain", "clouds"],
         "correctOption": "rain",
         "feedback": {
@@ -218,7 +218,7 @@
       {
         "sentenceId": 19,
         "audioClip": "audio/lion.mp3",
-        "sentence": "The ____ is roaring.",
+        "sentence": "The lion is roaring.",
         "options": ["ant", "peacock", "lion"],
         "correctOption": "lion",
         "feedback": {
@@ -229,7 +229,7 @@
       {
         "sentenceId": 20,
         "audioClip": "audio/plane.mp3",
-        "sentence": "The ____ is flying in the sky.",
+        "sentence": "The plane is flying in the sky.",
         "options": ["car", "boat", "plane"],
         "correctOption": "plane",
         "feedback": {
