@@ -1,12 +1,37 @@
-.outer{
+.outer {
     background-color: rgb(40, 181, 236);
     border-radius: 30px;
     padding: 40px;
-
-}
-.home{
-    background-color: aquamarine;
+  }
+  
+  body {
+    background-image: url("/public/background.jpg");
+  }
+  
+  .game {
+    background-color: rgb(40, 181, 236);
+    border-radius: 30px;
+    margin: 20px auto;
     display: flex;
-    flex:1;
-    height: 100vh;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .sentence {
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+  }
+  
+  .options button {
+    margin-top: 20px;
+  }
+  
