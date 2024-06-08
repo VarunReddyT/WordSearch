@@ -1,0 +1,255 @@
+{
+    "levels": [
+      {
+        "level": 1,
+        "instructions": "Listen to the word and select the correct option to complete the sentence.",
+        "sentences": [
+          {
+            "sentenceId": 1,
+            "audioClip": "audio/dog.mp3",
+            "sentence": "The ____ is barking loudly.",
+            "options": ["cat", "dog", "bird"],
+            "correctOption": "dog",
+            "feedback": {
+              "correct": "Great job! You picked the correct word.",
+              "incorrect": "Try again! Listen carefully to the word."
+            }
+          },
+          {
+            "sentenceId": 2,
+            "audioClip": "audio/apple.mp3",
+            "sentence": "She ate a red ____.",
+            "options": ["banana", "carrot", "apple"],
+            "correctOption": "apple",
+            "feedback": {
+              "correct": "Well done! You got it right.",
+              "incorrect": "Oops! That's not correct. Listen to the word again."
+            }
+          },
+          {
+            "sentenceId": 3,
+            "audioClip": "audio/car.mp3",
+            "sentence": "He drives a fast ____.",
+            "options": ["bike", "plane", "car"],
+            "correctOption": "car",
+            "feedback": {
+              "correct": "Excellent! You chose the right word.",
+              "incorrect": "Not quite! Try listening to the word again."
+            }
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "instructions": "Listen to the word and select the correct option to complete the sentence.",
+        "sentences": [
+          {
+            "sentenceId": 4,
+            "audioClip": "audio/house.mp3",
+            "sentence": "They live in a big ____.",
+            "options": ["car", "house", "tent"],
+            "correctOption": "house",
+            "feedback": {
+              "correct": "Excellent! That's the right word.",
+              "incorrect": "Not quite! Try listening to the word again."
+            }
+          },
+          {
+            "sentenceId": 5,
+            "audioClip": "audio/book.mp3",
+            "sentence": "She is reading a ____.",
+            "options": ["book", "pen", "hat"],
+            "correctOption": "book",
+            "feedback": {
+              "correct": "Nice work! You chose correctly.",
+              "incorrect": "That's not it. Listen to the word again."
+            }
+          },
+          {
+            "sentenceId": 6,
+            "audioClip": "audio/flower.mp3",
+            "sentence": "He gave her a ____.",
+            "options": ["flower", "tree", "rock"],
+            "correctOption": "flower",
+            "feedback": {
+              "correct": "Well done! You picked the correct word.",
+              "incorrect": "Try again! Listen carefully to the word."
+            }
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "instructions": "Listen to the word and select the correct option to complete the sentence.",
+        "sentences": [
+          {
+            "sentenceId": 7,
+            "audioClip": "audio/chair.mp3",
+            "sentence": "She sat on the ____.",
+            "options": ["table", "bed", "chair"],
+            "correctOption": "chair",
+            "feedback": {
+              "correct": "Great job! You picked the correct word.",
+              "incorrect": "Try again! Listen carefully to the word."
+            }
+          },
+          {
+            "sentenceId": 8,
+            "audioClip": "audio/ball.mp3",
+            "sentence": "They played with a ____.",
+            "options": ["stick", "ball", "rope"],
+            "correctOption": "ball",
+            "feedback": {
+              "correct": "Well done! You got it right.",
+              "incorrect": "Oops! That's not correct. Listen to the word again."
+            }
+          },
+          {
+            "sentenceId": 9,
+            "audioClip": "audio/bike.mp3",
+            "sentence": "He rides his ____ every day.",
+            "options": ["bike", "skateboard", "car"],
+            "correctOption": "bike",
+            "feedback": {
+              "correct": "Excellent! You chose the right word.",
+              "incorrect": "Not quite! Try listening to the word again."
+            }
+          },
+          {
+            "sentenceId": 10,
+            "audioClip": "audio/milk.mp3",
+            "sentence": "She drank a glass of ____.",
+            "options": ["water", "juice", "milk"],
+            "correctOption": "milk",
+            "feedback": {
+              "correct": "Nice work! You chose correctly.",
+              "incorrect": "That's not it. Listen to the word again."
+            }
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "instructions": "Listen to the word and select the correct option to complete the sentence.",
+        "sentences": [
+          {
+            "sentenceId": 11,
+            "audioClip": "audio/sun.mp3",
+            "sentence": "The ____ is shining brightly.",
+            "options": ["moon", "star", "sun"],
+            "correctOption": "sun",
+            "feedback": {
+              "correct": "Great job! You picked the correct word.",
+              "incorrect": "Try again! Listen carefully to the word."
+            }
+          },
+          {
+            "sentenceId": 12,
+            "audioClip": "audio/shoe.mp3",
+            "sentence": "He put on his ____.",
+            "options": ["hat", "shoe", "glove"],
+            "correctOption": "shoe",
+            "feedback": {
+              "correct": "Excellent! That's the right word.",
+              "incorrect": "Not quite! Try listening to the word again."
+            }
+          },
+          {
+            "sentenceId": 13,
+            "audioClip": "audio/fish.mp3",
+            "sentence": "The ____ is swimming in the pond.",
+            "options": ["bird", "cat", "fish"],
+            "correctOption": "fish",
+            "feedback": {
+              "correct": "Nice work! You chose correctly.",
+              "incorrect": "That's not it. Listen to the word again."
+            }
+          },
+          {
+            "sentenceId": 14,
+            "audioClip": "audio/tree.mp3",
+            "sentence": "There is a big ____ in the garden.",
+            "options": ["bush", "flower", "tree"],
+            "correctOption": "tree",
+            "feedback": {
+              "correct": "Great job! You picked the correct word.",
+              "incorrect": "Try again! Listen carefully to the word."
+            }
+          },
+          {
+            "sentenceId": 15,
+            "audioClip": "audio/clock.mp3",
+            "sentence": "The ____ is ticking.",
+            "options": ["clock", "radio", "phone"],
+            "correctOption": "clock",
+            "feedback": {
+              "correct": "Well done! You got it right.",
+              "incorrect": "Oops! That's not correct. Listen to the word again."
+            }
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "instructions": "Listen to the word and select the correct option to complete the sentence.",
+        "sentences": [
+          {
+            "sentenceId": 16,
+            "audioClip": "audio/pizza.mp3",
+            "sentence": "They ordered a ____ for dinner.",
+            "options": ["sandwich", "burger", "pizza"],
+            "correctOption": "pizza",
+            "feedback": {
+              "correct": "Excellent! You chose the right word.",
+              "incorrect": "Not quite! Try listening to the word again."
+            }
+          },
+          {
+            "sentenceId": 17,
+            "audioClip": "audio/phone.mp3",
+            "sentence": "She called him on the ____.",
+            "options": ["computer", "phone", "television"],
+            "correctOption": "phone",
+            "feedback": {
+              "correct": "Nice work! You chose correctly.",
+              "incorrect": "That's not it. Listen to the word again."
+            }
+          },
+          {
+            "sentenceId": 18,
+            "audioClip": "audio/rain.mp3",
+            "sentence": "The ____ is falling.",
+            "options": ["snow", "rain", "hail"],
+            "correctOption": "rain",
+            "feedback": {
+              "correct": "Great job! You picked the correct word.",
+              "incorrect": "Try again! Listen carefully to the word."
+            }
+          },
+          {
+            "sentenceId": 19,
+            "audioClip": "audio/lion.mp3",
+            "sentence": "The ____ is roaring.",
+            "options": ["tiger", "elephant", "lion"],
+            "correctOption": "lion",
+            "feedback": {
+              "correct": "Well done! You got it right.",
+              "incorrect": "Oops! That's not correct. Listen to the word again."
+            }
+          },
+          {
+            "sentenceId": 20,
+            "audioClip": "audio/plane.mp3",
+            "sentence": "The ____ is flying in the sky.",
+            "options": ["car", "boat", "plane"],
+            "correctOption": "plane",
+            "feedback": {
+              "correct": "Excellent! That's the right word.",
+              "incorrect": "Not quite! Try listening to the word again."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,12 @@
+.outer{
+    background-color: rgb(40, 181, 236);
+    border-radius: 30px;
+    padding: 40px;
+
+}
+.home{
+    background-color: aquamarine;
+    display: flex;
+    flex:1;
+    height: 100vh;
+}
