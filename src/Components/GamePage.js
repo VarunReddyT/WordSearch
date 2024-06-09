@@ -4,7 +4,7 @@ import { GameContext } from './GameContext.js';
 import { useNavigate } from 'react-router-dom';
 
 export default function GamePage() {
-  const { selectedLevel, setWordTries } = useContext(GameContext);
+  const { selectedLevel } = useContext(GameContext);
 
   const levels = Sentences;
   const sentences = levels[selectedLevel].sentences;
@@ -12,9 +12,11 @@ export default function GamePage() {
   const sentence = sentences[currentSentenceIndex];
   const [updatedSentence, setUpdatedSentence] = useState('');
   const navigate = useNavigate();
+  const [wordTries, setWordTries] = useState(1);
+  // eslint-disable-next-line
+  const [startTime, setStartTime] = useState(Date.now());
 
   useEffect(() => {
-    // Update the sentence with underscores for correctOption
     setUpdatedSentence(sentence.sentence.replace(sentence.correctOption, '_____'));
   }, [sentence]);
 
@@ -26,6 +28,11 @@ export default function GamePage() {
     setWordTries((prev) => prev + 1);
     if (option === sentence.correctOption) {
       if((selectedLevel === 1 && currentSentenceIndex === 2) || (selectedLevel === 2 && currentSentenceIndex === 2) || (selectedLevel === 3 && currentSentenceIndex === 3) || (selectedLevel === 4 && currentSentenceIndex === 4) || (selectedLevel === 5 && currentSentenceIndex === 4)){
+
+        const endTime = Date.now();
+        const timeDiff = Math.round((endTime - startTime) / 1000);
+        localStorage.setItem('WordTries', wordTries);
+        localStorage.setItem('TimeTaken', timeDiff);
         navigate('/end');
       }
       else{
