@@ -2,6 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import Sentences from '../sentences.json';
 import { GameContext } from './GameContext.js';
 import { useNavigate } from 'react-router-dom';
+import ConfettiExplosion from 'react-confetti-explosion';
+
 
 export default function GamePage() {
   const { selectedLevel } = useContext(GameContext);
@@ -15,34 +17,43 @@ export default function GamePage() {
   const [wordTries, setWordTries] = useState(1);
   // eslint-disable-next-line
   const [startTime, setStartTime] = useState(Date.now());
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [confetti, setConfetti] = useState(false);
 
   useEffect(() => {
     setUpdatedSentence(sentence.sentence.replace(sentence.correctOption, '_____'));
   }, [sentence]);
 
   const handleOptionClick = async (option) => {
-    console.log(option);
+    setSelectedOption(option);
     const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(option);
     await synth.speak(utterance);
     setWordTries((prev) => prev + 1);
     if (option === sentence.correctOption) {
-      if((selectedLevel === 1 && currentSentenceIndex === 2) || (selectedLevel === 2 && currentSentenceIndex === 2) || (selectedLevel === 3 && currentSentenceIndex === 3) || (selectedLevel === 4 && currentSentenceIndex === 4) || (selectedLevel === 5 && currentSentenceIndex === 4)){
-
+      setConfetti(true);
+      setTimeout(() => {
+        setConfetti(false);
+      }, 1500);
+      if ((selectedLevel === 1 && currentSentenceIndex === 2) ||
+          (selectedLevel === 2 && currentSentenceIndex === 2) ||
+          (selectedLevel === 3 && currentSentenceIndex === 3) ||
+          (selectedLevel === 4 && currentSentenceIndex === 4) ||
+          (selectedLevel === 5 && currentSentenceIndex === 4)) {
         const endTime = Date.now();
         const timeDiff = Math.round((endTime - startTime) / 1000);
         localStorage.setItem('WordTries', wordTries);
         localStorage.setItem('TimeTaken', timeDiff);
         navigate('/end');
-      }
-      else{
+      } else {
         setUpdatedSentence(updatedSentence.replace('_____', sentence.correctOption));
         setTimeout(() => {
           setCurrentSentenceIndex((prev) => prev + 1);
+          setSelectedOption(null); // Reset selected option for next sentence
         }, 1500);
       }
     }
-  }
+  };
 
   return (
     <div>
@@ -58,11 +69,17 @@ export default function GamePage() {
         </div>
         <div className='options mt-3'>
           {sentence.options.map((option, index) => (
-            <button key={index} className='btn btn-lg optionButton' onClick={() => handleOptionClick(option)}>
+            <button
+              key={index}
+              className={`btn btn-lg optionButton ${selectedOption === option ? (option === sentence.correctOption ? 'btn-success' : 'btn-danger') : ''}`}
+              onClick={() => handleOptionClick(option)}
+            >
               {option}
+
             </button>
           ))}
         </div>
+        {confetti && <ConfettiExplosion force={0.2} duration={1500} />}
       </div>
     </div>
   );
